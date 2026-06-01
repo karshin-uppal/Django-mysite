@@ -8,9 +8,9 @@
     <ul>
         {% for item in ls.item_set.all %}
             {% if not item.complete %}
-                <li>{{ item.text }} - Incomplete</li>
+                <li>{{ item.text }}</li>
             {% else %}
-                 <li>{{ item.text}} - Complete</li>
+                 <li>{{ item.text}}</li>
             {% endif %}
         {% endfor %}
     </ul>
