@@ -7,7 +7,7 @@
 
     <form method="post" action="/create/">
         {% csrf_token %}
-        {{ form.as_p }}
+        {{ form.as_p }} <!-- This is basically how the forma shows, asul means it will show as a list with dots, as p means this will show vertically  -->
         <button type="submit" name="save">Create New</button>
     </form>
 
